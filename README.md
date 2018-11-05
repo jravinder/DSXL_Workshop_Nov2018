@@ -54,6 +54,16 @@ This repository contains several lab subfolders. Some labs include notebooks and
 8. To see the results of the model evaluation, navigate the to the **Models** section of the project and click into the model  **Telco_Churn_ML_model**.  Scroll down to the **Evaluation results** section.<br/>
 ![model_eval_results](/img/model_eval_results.png?raw=true)
 
+### Optional Exercise: Build and save a new version of the model
+1. Open the Jupyter notebook you have been working with in Lab 1
+2. Go to **Step 6: Build the Spark pipeline and the Random Forest model** in the notebook
+3. In the code cell, delete the first 4 input variables from the VectorAssembler().  This effectively reduces the number of input columns we will use to build a new version of the model, and hence changes the accuracy of the model.  Run the code cell.
+4. Run all the code cells from Step 6 until Step 9, which will save a new version of this model in the repository.  Note the scoring endpoint, you will see "2" at the end of the scoring endpoint, indicating that endpoint references version 2 of the model.
+5. Navigate to the **Models** section of the project and click into the saved **Telco_Churn_ML_model**. You will see the current accuracy of this version of the model, as well as the accuracy history.
+
+
+
+
 <br/>
 <!---
 ### Lab 4: Build R models in Jupyter and deploy R model.  Test and evaluate R model, run Shiny App with embedded model.
